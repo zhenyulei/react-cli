@@ -1,0 +1,23 @@
+{
+  "name": "nutui-react",
+  "version": "1.0.0",
+  "description": "react版本组件库",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nutui-react dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhenyulei/react-ui.git"
+  },
+  "author": "zhenyulei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhenyulei/react-ui/issues"
+  },
+  "homepage": "https://github.com/zhenyulei/react-ui#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
