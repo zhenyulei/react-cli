@@ -1,0 +1,56 @@
+.search-box {
+	height: 22px;
+	min-width: 300px;
+	position: relative;
+	input {
+		width: 100%;
+	}
+}
+.search {
+	height: 22px;
+	font-size: 14px;
+	color: #666;
+	border: none;
+	background: url(../../asset/css/i/sreach.png) no-repeat left center;
+	padding-left: 45px;
+	&:focus {
+		outline: none;
+	}
+}
+.search-list {
+	background: #fff;
+	position: absolute;
+	width: 300px;
+	list-style: none;
+	// border: 1px solid #f2f2f2;
+	z-index: 99999;
+	top: 27px;
+	padding: 0;
+	li {
+		height: 40px;
+		line-height: 40px;
+		font-size: 12px;
+		a {
+			display: inline-block;
+			box-sizing: border-box;
+			width: 100%;
+			padding-left: 40px;
+			text-decoration: none;
+			color: #666;
+		}
+		&:hover {
+			background: #6096ff;
+			color: #fff;
+			a {
+				color: #fff;
+			}
+		}
+	}
+	.cur {
+		background: #6096ff;
+		color: #fff;
+		a {
+			color: #fff;
+		}
+	}
+}

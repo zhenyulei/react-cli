@@ -8,8 +8,10 @@ import { isDev } from '../util';
 const { version } = require(ROOT_PACKAGE_PATH('package.json'));
 export const devConfig: Webpack.Configuration = merge(baseConfig, {
 	mode: 'development',
+	devtool:"cheap-module-source-map",
 	entry: {
-		'nutui-mobile': ROOT_CLI_PATH('site/demo/index.tsx')
+		'nutui-mobile': ROOT_CLI_PATH('site/demo/index.tsx'),
+		'nutui-doc': ROOT_CLI_PATH('site/doc/app.tsx'),
 	},
 	output: {
 		filename: '[name].bundle.js',
@@ -51,21 +53,21 @@ export const devConfig: Webpack.Configuration = merge(baseConfig, {
 		new MiniCssExtractPlugin({
 			filename: isDev() ? '[name].css' : 'css/[name].[hash].min.css',
 		}),
-		// new HtmlWebpackPlugin({
-		// 	template: ROOT_CLI_PATH('site/doc/index.html'),
-		// 	filename: 'index.html',
-		// 	hash: true, //防止缓存
-		// 	inject: true,
-		// 	chunks: ['common_chunks', 'nutui-doc'],
-		// 	minify: {
-		// 		minifyJS: true,
-		// 		minifyCSS: true,
-		// 		removeAttributeQuotes: true, //压缩 去掉引号
-		// 	},
-		// }),
+		new HtmlWebpackPlugin({
+			template: ROOT_CLI_PATH('site/doc/index.html'),
+			filename: 'index.html',
+			hash: true, //防止缓存
+			inject: true,
+			chunks: ['common_chunks', 'nutui-doc'],
+			minify: {
+				minifyJS: true,
+				minifyCSS: true,
+				removeAttributeQuotes: true, //压缩 去掉引号
+			},
+		}),
 		new HtmlWebpackPlugin({
 			template: ROOT_CLI_PATH('site/demo/index.html'),
-			filename: 'index.html',
+			filename: 'demo.html',
 			hash: true, //防止缓存
 			inject: true,
 			chunks: ['common_chunks', 'nutui-mobile'],
