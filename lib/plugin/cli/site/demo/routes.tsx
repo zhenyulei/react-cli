@@ -28,7 +28,7 @@ packages.map((item)=>{
 
 function renderRouter(data) {
   const { source,path } = data;
-  return <Route key={`route-${path}`} exact component={source} path={path} />;
+  return <Route key={`route-${path}`} exact component={source} path={path}/>;
 }
 
 const RouteMap = ()=>{

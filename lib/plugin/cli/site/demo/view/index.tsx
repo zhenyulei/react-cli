@@ -62,8 +62,8 @@ const MainNav : FC = ()=>{
                                 return (
                                     cpt.sort == item ?
                                     <li key={cpt.name}>
-                                        <Link to="/button">
-                                        {cpt.name }
+                                        <Link to={'/'+cpt.name}>
+                                        {cpt.name}
                                         <span>{ cpt.chnName }</span>
                                         </Link>
                                     </li>

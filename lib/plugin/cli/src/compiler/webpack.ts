@@ -24,7 +24,7 @@ function devServer(config: Webpack.Configuration) { //Webpack.Configuratio在哪
 	};
 	const server = new WebpackDevServer(compiler, devServerOptions);
 
-	server.listen(8004, '0.0.0.0', (err: Error) => {
+	server.listen(8001, '0.0.0.0', (err: Error) => {
 		if (err) logger.error(err);
 	});
 }
