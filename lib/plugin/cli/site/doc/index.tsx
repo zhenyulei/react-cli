@@ -62,7 +62,7 @@ const Main:React.FC = () => {
 				<div className="mouseDiv" id="mouseDiv"></div>
 				<p className="title">NutUI</p>
 				<p className="sub-title">一套京东风格的轻量级移动端Vue组件库</p>
-				<Link to="#/intro" className="blue-btn">开始使用</Link>
+				<Link to="/intro" className="blue-btn">开始使用</Link>
 				<span className="qrcode btn">
 					扫码体验
 					<span className="qcode-box">
