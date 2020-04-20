@@ -3,8 +3,8 @@
 import 'highlight.js/styles/github.css';
 import React from 'react';
 import {render} from 'react-dom';
-// import {BrowserRouter as Router} from 'react-router-dom';
-// import Routes from './routes';
+import {BrowserRouter as Router} from 'react-router-dom';
+import Routes from './routes';
 // import { isMobile } from './asset/js/utils.js';
 
 // if (isMobile) {
@@ -12,7 +12,9 @@ import {render} from 'react-dom';
 // }
 
 render(
-  <div>123</div>,
+  <Router>
+    <Routes/>
+  </Router>,
   document.getElementById('doc')
 );
 

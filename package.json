@@ -18,7 +18,7 @@
   "homepage": "https://github.com/zhenyulei/react-ui#readme",
   "dependencies": {
     "@babel/preset-react": "^7.9.4",
-    "@zhenyulei/react-myclis": "^1.1.16"
+    "@zhenyulei/react-myclis": "^1.1.17"
   },
   "devDependencies": {}
 }
