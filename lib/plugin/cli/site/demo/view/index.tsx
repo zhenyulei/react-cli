@@ -2,7 +2,8 @@
 import React, { FC,useState,Fragment,useEffect} from 'react'
 import { Link} from 'react-router-dom'
 import classNames from 'classnames'
-import config from '@/config.tsx';
+import config from '@/config.json';
+import {version} from '@/../package.json'
 import './index.scss';
 const MainNav : FC = ()=>{
     //class 样式名区域
@@ -13,7 +14,7 @@ const MainNav : FC = ()=>{
     const [foldStatus,setFoldStatus] = useState([]);
     const [oriSorts,setOriSorts] = useState(config.sorts);
     const [packageLists,setPackageLists] = useState(config.packages);
-    const [versions,setVersions] = useState('1.2'); //无法获取ts
+    const [versions,setVersions] = useState(version); //无法获取ts
     const [sort,setSort] = useState([1, 2, 0, 3, 4, 5]);
     //useEffect区域
     useEffect(()=>{

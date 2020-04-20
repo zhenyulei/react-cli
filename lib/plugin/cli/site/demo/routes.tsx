@@ -1,12 +1,12 @@
 //@ts-nocheck
 import React, { FC } from 'react'
 import { HashRouter, Route , Switch,} from 'react-router-dom'
-import config  from '@/config.tsx';
+import {packages}  from '@/config.json';
 import DocLoadable from './routers/loadable'
 import MainNav from './view/index'
 import DemoNav from './view/demoNav'
 import './asset/css/demo-common.scss'
-const packages = config.packages;
+// const packages = config.packages;
 let route = [{
   path:'/',
   source:MainNav

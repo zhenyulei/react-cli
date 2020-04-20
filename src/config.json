@@ -1,4 +1,4 @@
-const config = {
+{
     "sorts": [
       "数据展示",
       "数据录入",
@@ -31,4 +31,3 @@ const config = {
           }
       ]
 }
-export default config

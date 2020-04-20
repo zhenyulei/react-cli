@@ -39,3 +39,4 @@ module.exports = { presets, plugins };
 ```
 先用include限制使用ts-loader；再增加ts-loader的options：allowTsInNodeModules: true
 允许ts编译 NodeModules 的文件；
+4. 不要有js文件，都要写成ts文件或者tsx文件；

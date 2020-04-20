@@ -1,6 +1,6 @@
 {
   "name": "@zhenyulei/react-myclis",
-  "version": "1.1.20",
+  "version": "1.1.21",
   "description": "",
   "main": "./dist_cli/bin/index.js",
   "bin": {
