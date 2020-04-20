@@ -1,6 +1,6 @@
 {
-  "name": "@nutui/reactcli",
-  "version": "1.0.0",
+  "name": "@zhenyulei/react-myclis",
+  "version": "1.1.16",
   "description": "",
   "main": "./dist_cli/bin/index.js",
   "bin": {
@@ -9,6 +9,13 @@
   "scripts": {
     "dev": "tsc --watch --incremental"
   },
+  "files": [
+    "dist_cli",
+    "README.md",
+    "package.json",
+    "site",
+    "README.md"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {

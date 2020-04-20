@@ -33,19 +33,18 @@ export const baseConfig: Webpack.Configuration = {
                 ],
             },
 			{
-				test: /\.js|tsx|ts$/,
+				test: /\.(js|tsx|ts)$/,
 				use: [
 					'cache-loader',
 					'babel-loader',
 					{
 						loader: 'ts-loader',
 						options: {
-							appendTsSuffixTo: [/\.jsx$/],
-							appendTsxSuffixTo: [/\.jsx$/],
+							allowTsInNodeModules: true 
 						},
 					},
 				],
-				exclude:/node_modules/
+				include: [ROOT_PACKAGE_PATH('src'), ROOT_PACKAGE_PATH('types'), ROOT_CLI_PATH('site'), ROOT_CLI_PATH('src')],
 			},
 			{
 				test: /\.(png|jpe?g|gif|webp)$/,
